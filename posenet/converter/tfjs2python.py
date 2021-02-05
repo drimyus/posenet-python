@@ -5,11 +5,11 @@ from tensorflow.python.tools.freeze_graph import freeze_graph
 import cv2
 import numpy as np
 import os
-import tempfile
 
 from posenet.converter.config import load_config
 
-BASE_DIR = os.path.join(tempfile.gettempdir(), '_posenet_weights')
+# BASE_DIR = os.path.join(tempfile.gettempdir(), '_posenet_weights')
+BASE_DIR = '/media/be/67F04CCE6BD713C5/Work/TopKamera/Others/gkpt-det-viso/posenet-python/posenet/converter/weights'
 
 
 def to_output_strided_layers(convolution_def, output_stride):

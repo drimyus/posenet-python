@@ -67,3 +67,13 @@ The Python conversion code that started me on my way was adapted from the CoreML
 * Comment interfaces, tensor dimensions, etc
 * Implement batch inference for image_demo
 
+
+# Convert to OpenVinoModel
+python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py \
+        --input_model /media/be/67F04CCE6BD713C5/Work/TopKamera/Others/gkpt-det-viso/posenet-python/_models/model-mobilenet_v1_100.pb \
+        --framework tf \
+        -o ~/posenet_mobilenet_v1_100/ \
+        --input image \
+        --input_shape [1,224,224,3] \
+        --output "offset_2,displacement_fwd_2,displacement_bwd_2,heatmap" \
+        --data_type FP16

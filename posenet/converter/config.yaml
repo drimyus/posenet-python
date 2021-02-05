@@ -1,4 +1,4 @@
-chk: 3 # 3=mobilenet_v1_101
+chk: 2 # 3=mobilenet_v1_101
 imageSize: 513
 GOOGLE_CLOUD_STORAGE_DIR: 'https://storage.googleapis.com/tfjs-models/weights/posenet/'
 checkpoints: [ 'mobilenet_v1_050', 'mobilenet_v1_075', 'mobilenet_v1_100', 'mobilenet_v1_101']
